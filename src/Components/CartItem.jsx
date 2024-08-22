@@ -19,7 +19,7 @@ const CartItem = ({item}) => {
         </div>
         <div className=' flex flex-col justify-center gap-9'>
             <p className=' font-bold'>{item.title}</p>
-            <p className=' opacity-60'>{item.description}</p>
+            <p>{item.description}</p>
             <div className=' flex justify-between'>
                 <p>{item.price}</p>
                 <div onClick={removeFromCart} className=' cursor-pointer text-red-800 border p-4 hover:bg-red-900 hover:text-white transition-all duration-200 rounded-md relative' onMouseEnter={() => setIsHovered(true)}
